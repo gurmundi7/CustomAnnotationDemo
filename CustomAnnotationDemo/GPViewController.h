@@ -7,7 +7,12 @@
 //
 
 #import <UIKit/UIKit.h>
+#import "GPSimplePinAnnotation.h"
+#import "GPCustomPinAnnotation.h"
+#import "GPCustomAnnotationView.h"
 
-@interface GPViewController : UIViewController
+@interface GPViewController : UIViewController<MKMapViewDelegate,GPAnnotationViewDelegate>
+
+@property (weak, nonatomic) IBOutlet MKMapView *mapView;
 
 @end

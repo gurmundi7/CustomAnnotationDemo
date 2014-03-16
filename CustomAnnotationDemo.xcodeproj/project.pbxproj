@@ -21,6 +21,10 @@
 		10165FDB18CCA75D00581912 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 10165FBD18CCA75D00581912 /* UIKit.framework */; };
 		10165FE318CCA75D00581912 /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = 10165FE118CCA75D00581912 /* InfoPlist.strings */; };
 		10165FE518CCA75D00581912 /* CustomAnnotationDemoTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 10165FE418CCA75D00581912 /* CustomAnnotationDemoTests.m */; };
+		10165FEF18CCA7AE00581912 /* MapKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 10165FEE18CCA7AE00581912 /* MapKit.framework */; };
+		10165FF218CCA8AB00581912 /* GPSimplePinAnnotation.m in Sources */ = {isa = PBXBuildFile; fileRef = 10165FF118CCA8AB00581912 /* GPSimplePinAnnotation.m */; };
+		10165FF518CCABC300581912 /* GPCustomPinAnnotation.m in Sources */ = {isa = PBXBuildFile; fileRef = 10165FF418CCABC300581912 /* GPCustomPinAnnotation.m */; };
+		10165FF818CCAD9D00581912 /* GPCustomAnnotationView.m in Sources */ = {isa = PBXBuildFile; fileRef = 10165FF718CCAD9D00581912 /* GPCustomAnnotationView.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -53,6 +57,13 @@
 		10165FE018CCA75D00581912 /* CustomAnnotationDemoTests-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "CustomAnnotationDemoTests-Info.plist"; sourceTree = "<group>"; };
 		10165FE218CCA75D00581912 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
 		10165FE418CCA75D00581912 /* CustomAnnotationDemoTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = CustomAnnotationDemoTests.m; sourceTree = "<group>"; };
+		10165FEE18CCA7AE00581912 /* MapKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = MapKit.framework; path = System/Library/Frameworks/MapKit.framework; sourceTree = SDKROOT; };
+		10165FF018CCA8AB00581912 /* GPSimplePinAnnotation.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GPSimplePinAnnotation.h; sourceTree = "<group>"; };
+		10165FF118CCA8AB00581912 /* GPSimplePinAnnotation.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = GPSimplePinAnnotation.m; sourceTree = "<group>"; };
+		10165FF318CCABC300581912 /* GPCustomPinAnnotation.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GPCustomPinAnnotation.h; sourceTree = "<group>"; };
+		10165FF418CCABC300581912 /* GPCustomPinAnnotation.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = GPCustomPinAnnotation.m; sourceTree = "<group>"; };
+		10165FF618CCAD9D00581912 /* GPCustomAnnotationView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GPCustomAnnotationView.h; sourceTree = "<group>"; };
+		10165FF718CCAD9D00581912 /* GPCustomAnnotationView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = GPCustomAnnotationView.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -60,6 +71,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				10165FEF18CCA7AE00581912 /* MapKit.framework in Frameworks */,
 				10165FBC18CCA75D00581912 /* CoreGraphics.framework in Frameworks */,
 				10165FBE18CCA75D00581912 /* UIKit.framework in Frameworks */,
 				10165FBA18CCA75D00581912 /* Foundation.framework in Frameworks */,
@@ -79,6 +91,19 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		1003E46718D579010071FEA6 /* Custom Pin Classes */ = {
+			isa = PBXGroup;
+			children = (
+				10165FF018CCA8AB00581912 /* GPSimplePinAnnotation.h */,
+				10165FF118CCA8AB00581912 /* GPSimplePinAnnotation.m */,
+				10165FF318CCABC300581912 /* GPCustomPinAnnotation.h */,
+				10165FF418CCABC300581912 /* GPCustomPinAnnotation.m */,
+				10165FF618CCAD9D00581912 /* GPCustomAnnotationView.h */,
+				10165FF718CCAD9D00581912 /* GPCustomAnnotationView.m */,
+			);
+			name = "Custom Pin Classes";
+			sourceTree = "<group>";
+		};
 		10165FAD18CCA75D00581912 = {
 			isa = PBXGroup;
 			children = (
@@ -101,6 +126,7 @@
 		10165FB818CCA75D00581912 /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
+				10165FEE18CCA7AE00581912 /* MapKit.framework */,
 				10165FB918CCA75D00581912 /* Foundation.framework */,
 				10165FBB18CCA75D00581912 /* CoreGraphics.framework */,
 				10165FBD18CCA75D00581912 /* UIKit.framework */,
@@ -117,6 +143,7 @@
 				10165FCB18CCA75D00581912 /* Main.storyboard */,
 				10165FCE18CCA75D00581912 /* GPViewController.h */,
 				10165FCF18CCA75D00581912 /* GPViewController.m */,
+				1003E46718D579010071FEA6 /* Custom Pin Classes */,
 				10165FD118CCA75D00581912 /* Images.xcassets */,
 				10165FC018CCA75D00581912 /* Supporting Files */,
 			);
@@ -251,6 +278,9 @@
 			buildActionMask = 2147483647;
 			files = (
 				10165FC618CCA75D00581912 /* main.m in Sources */,
+				10165FF818CCAD9D00581912 /* GPCustomAnnotationView.m in Sources */,
+				10165FF518CCABC300581912 /* GPCustomPinAnnotation.m in Sources */,
+				10165FF218CCA8AB00581912 /* GPSimplePinAnnotation.m in Sources */,
 				10165FD018CCA75D00581912 /* GPViewController.m in Sources */,
 				10165FCA18CCA75D00581912 /* GPAppDelegate.m in Sources */,
 			);
@@ -382,6 +412,7 @@
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "CustomAnnotationDemo/CustomAnnotationDemo-Prefix.pch";
 				INFOPLIST_FILE = "CustomAnnotationDemo/CustomAnnotationDemo-Info.plist";
+				IPHONEOS_DEPLOYMENT_TARGET = 6.0;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				WRAPPER_EXTENSION = app;
 			};
@@ -395,6 +426,7 @@
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "CustomAnnotationDemo/CustomAnnotationDemo-Prefix.pch";
 				INFOPLIST_FILE = "CustomAnnotationDemo/CustomAnnotationDemo-Info.plist";
+				IPHONEOS_DEPLOYMENT_TARGET = 6.0;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				WRAPPER_EXTENSION = app;
 			};
@@ -461,6 +493,7 @@
 				10165FEA18CCA75D00581912 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		10165FEB18CCA75D00581912 /* Build configuration list for PBXNativeTarget "CustomAnnotationDemoTests" */ = {
 			isa = XCConfigurationList;
@@ -469,6 +502,7 @@
 				10165FED18CCA75D00581912 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
